@@ -1,0 +1,77 @@
+:root {
+  --ink: #0E141B;
+  --ink-deep: #070A0E;
+  --parchment: #EDE6D6;
+  --muted: #7C8B99;
+  --gold: #C8A45C;
+}
+
+* { box-sizing: border-box; }
+
+html { background: var(--ink-deep); }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(ellipse at 50% 30%, var(--ink) 0%, var(--ink-deep) 75%) fixed;
+  color: var(--parchment);
+  font-family: 'Newsreader', Georgia, 'Times New Roman', serif;
+  font-weight: 300;
+  font-size: 19px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 72px 20px 48px;
+}
+
+a { color: var(--gold); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: var(--parchment); }
+
+.wordmark {
+  font-size: 44px;
+  font-weight: 300;
+  line-height: 1.15;
+  margin: 0 0 8px;
+  letter-spacing: 0.01em;
+}
+.wordmark em { color: var(--gold); font-style: italic; }
+
+h1 { font-size: 36px; font-weight: 300; line-height: 1.2; margin: 0 0 4px; }
+h2 { font-size: 22px; font-weight: 400; margin: 40px 0 8px; color: var(--gold); }
+p, li { margin: 0 0 14px; }
+ul { padding-left: 22px; }
+
+.muted { color: var(--muted); }
+.small { font-size: 16px; }
+
+/* Home */
+.home { text-align: center; padding-top: 96px; }
+.home img.icon { width: 180px; height: auto; display: block; margin: 0 auto 28px; }
+.home .lede { font-size: 22px; max-width: 520px; margin: 18px auto 36px; }
+.channels { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-bottom: 56px; }
+.channels a {
+  display: inline-block;
+  padding: 10px 22px;
+  border: 1px solid rgba(200, 164, 92, 0.5);
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 17px;
+  letter-spacing: 0.04em;
+}
+.channels a:hover { background: rgba(200, 164, 92, 0.12); }
+
+.back { display: inline-block; margin-bottom: 36px; font-size: 16px; text-decoration: none; }
+
+footer {
+  border-top: 1px solid rgba(124, 139, 153, 0.25);
+  margin-top: 56px;
+  padding-top: 20px;
+  font-size: 15px;
+  color: var(--muted);
+  text-align: center;
+}
+footer a { color: var(--muted); margin: 0 8px; }
